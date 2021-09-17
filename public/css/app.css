@@ -1,0 +1,60 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+.home-index {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url("https://jeffshore.com/wp-content/uploads/2016/07/Taking-Notes.jpg")
+            no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-welcome {
+    font-size: 70px;
+    padding-top: 100px;
+}
+
+.home-inner-container {
+    padding: 50px;
+}
+
+.home-paragraph {
+    font-size: 40px;
+}
+
+.home-note-tracker-app-text {
+    color: rgb(0, 183, 255);
+}
+
+.create-text {
+    font-weight: 900;
+}
+
+.create-container,
+.edit-container,
+.register-container,
+.login-container {
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    background-color: rgb(59, 60, 61);
+    border-radius: 20px;
+    box-shadow: 10px 12px 10px;
+}
+
+.show-back-list {
+    font-size: 20px;
+}
+
+.show-container {
+    padding: 30px 70px;
+    background-color: rgb(59, 60, 61);
+    border-radius: 20px;
+    box-shadow: white 10px 12px 10px;
+    margin-top: 90px;
+}
