@@ -7,7 +7,7 @@
 @section("content")
 
 
-    <h1 class="text-center mt-3 display-4 text-light">Edit Note <i class="fas fa-edit"></i></h1>
+    <h1 class="text-center mt-3 display-4 text-light">Edit Note<i class="fas fa-edit"></i></h1>
 
     <div class="text-light edit-container">
 

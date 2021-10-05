@@ -48,9 +48,17 @@
                         </div>
                     </td>
                   </tr> 
-                @endforeach 
+                @endforeach  
           </tbody>
+          
       </table>
+  </div> 
+  
+  
+  <div class="text-center">
+    {!! $notes->links() !!}
   </div>
 
-@endsection
+  
+ @endsection
+

@@ -26,9 +26,9 @@ class NoteController extends Controller
     {   
         if (Auth::user()->is_admin == 1){ 
             // $notes = Note::orderBy("created_at", "desc")->get();
-            $notes = Note::latest()->get();
+            $notes = Note::latest()->paginate(5);
         } else {
-            $notes = Note::where("user_id", Auth::user()->id)->latest()->get();
+            $notes = Note::where("user_id", Auth::user()->id)->latest()->paginate(5);
         }
         
         $data['notes'] = $notes; 
@@ -95,7 +95,7 @@ class NoteController extends Controller
     public function update(Request $request, Note $note) 
     {
         $note->title = $request->title;
-        $note->content = $request->content; 
+        $note->content = $request->content;
 
         $note->save();
 

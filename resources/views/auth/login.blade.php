@@ -9,7 +9,7 @@
 
 
     <div class="text-light login-container">
-        <form action="{{ route("login") }}" method="post">
+        <form action="{{ route("login") }}" method="post"> 
 
             @csrf
 

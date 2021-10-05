@@ -5,9 +5,7 @@
 
 
 @section("content")
-
-   
-      
+        
         <h1 class="text-center mt-3 display-4 text-light">Create Note <i class="fas fa-plus-circle"></i></h1>
         
         <div class="text-light create-container">
@@ -25,7 +23,7 @@
                 </div>
                 
                 <button type="submit" class="btn btn-primary btn-block mt-4">Create</button>
-            </form> 
+            </form>
         
         </div>
 

@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <title>@yield("title")</title>
+
+    <style>
+      .w-5 {
+        display: none;
+      }
+    </style>
+
 </head>
 <body>
 
@@ -52,19 +59,7 @@
                 
                   <a class="nav-link" href="{{ route("logout") }}"
                   onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                    Logout (
-                    @if (Auth::user()->is_admin === 1)
-
-                      {{ "admin" }}
-                
-                    @else
-
-                    {{ Auth::user()->email }}
-                      
-                    @endif
-                    )
-
-                
+                    Logout ( {{ Auth::user()->is_admin == 1 ? "admin" : Auth::user()->email }} )
                   </a>
 
                   <form id="logout-form" method="post" action="{{ route("logout") }}" style="display: none;">
@@ -90,8 +85,10 @@
       @endif
     
     <div class="container">
-        @yield("content") 
+        @yield("content")
     </div>
+
+  
 
 
 
